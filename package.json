@@ -1,5 +1,5 @@
 {
-  "name": "abkit",
+	"name": "abkit",
 	"displayName": "accessibility-testkit",
 	"description": "",
 	"version": "0.0.1",
@@ -10,7 +10,7 @@
 		"Other"
 	],
 	"activationEvents": [
-    "*"
+		"*"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
