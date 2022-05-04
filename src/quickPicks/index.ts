@@ -1,8 +1,8 @@
-import { ExtensionContext } from "vscode";
+import { createCbMapper, createMenuItems, OptionsList } from "../utils";
 import { createQuickPicksMany, createQuickPicksSingle } from "./createQuickPicks";
 import { showQuickPicksMany, showQuickPicksSingle } from "./showQuickPicks";
 
-export const QP_OPTIONS: QuickPickOption[] = [
+export const QP_OPTIONS: OptionsList[] = [
   {
     label: "Quick Picks: Show Quick Picks - Single",
     description: "showQuickPicksSingle",
@@ -25,23 +25,5 @@ export const QP_OPTIONS: QuickPickOption[] = [
   },
 ];
 
-export const quickPickCbMap = QP_OPTIONS.reduce(
-  (
-    acc: Record<string, (context: ExtensionContext) => any>,
-    { description, cb }: QuickPickOption
-  ) => {
-    acc[description] = cb;
-    return acc;
-  },
-  {}
-);
-
-export const quickPickItems = QP_OPTIONS.map(({ label, description }: QuickPickOption) => {
-  return { label, description };
-});
-
-export type QuickPickOption = {
-  label: string;
-  description: string;
-  cb: (context: ExtensionContext) => any;
-};
+export const quickPickCbMap = createCbMapper(QP_OPTIONS);
+export const quickPickMenuItems = createMenuItems(QP_OPTIONS);

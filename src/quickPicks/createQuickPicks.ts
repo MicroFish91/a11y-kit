@@ -4,7 +4,7 @@ import {
   QuickPickItem,
   QuickPickItemKind,
   ThemeIcon,
-  window,
+  window
 } from "vscode";
 import { CustomQuickPick } from "./CustomQuickPick";
 
@@ -14,26 +14,14 @@ export async function createQuickPicksSingle() {
   // https://code.visualstudio.com/api/references/icons-in-labels#icon-listing
   const quickPickBtns: QuickInputButton[][] = [
     [
-      {
-        iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item One - Icon Tooltip",
-      },
+      { iconPath: new ThemeIcon("git-merge"), tooltip: "Quick Pick Item One - Icon Tooltip" },
     ],
     [
-      {
-        iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Three - Icon Tooltip",
-      },
+      { iconPath: new ThemeIcon("git-merge"), tooltip: "Quick Pick Item Three - Icon Tooltip" },
     ],
     [
-      {
-        iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Two - Icon Tooltip",
-      },
-      {
-        iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Two - Icon Tooltip",
-      },
+      { iconPath: new ThemeIcon("git-merge"), tooltip: "Quick Pick Item Two - Icon Tooltip" },
+      { iconPath: new ThemeIcon("git-merge"), tooltip: "Quick Pick Item Two - Icon Tooltip" },
     ],
   ];
 
@@ -55,6 +43,7 @@ export async function createQuickPicksSingle() {
       window.showInformationMessage(`You chose: ${eventSelection[0].label}`);
     }
   });
+  quickPick.onDidAccept(() => quickPick.hide())
   quickPick.show();
 }
 
@@ -64,26 +53,14 @@ export async function createQuickPicksMany() {
   // https://code.visualstudio.com/api/references/icons-in-labels#icon-listing
   const quickPickBtns: QuickInputButton[][] = [
     [
-      {
-        iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item One - Icon Tooltip",
-      },
+      { iconPath: new ThemeIcon("git-merge"), tooltip: "Quick Pick Item One - Icon Tooltip" },
     ],
     [
-      {
-        iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Three - Icon Tooltip",
-      },
+      { iconPath: new ThemeIcon("git-merge"), tooltip: "Quick Pick Item Three - Icon Tooltip" },
     ],
     [
-      {
-        iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Two - Icon Tooltip",
-      },
-      {
-        iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Two - Icon Tooltip",
-      },
+      { iconPath: new ThemeIcon("git-merge"), tooltip: "Quick Pick Item Two - Icon Tooltip" },
+      { iconPath: new ThemeIcon("git-merge"), tooltip: "Quick Pick Item Two - Icon Tooltip" },
     ],
   ];
 
@@ -105,5 +82,6 @@ export async function createQuickPicksMany() {
       window.showInformationMessage(`You chose: ${eventSelection[0].label}`);
     }
   });
+  quickPick.onDidAccept(() => quickPick.hide())
   quickPick.show();
 }
