@@ -40,7 +40,7 @@ export async function createQuickPicksSingle() {
   quickPick.onDidHide(() => quickPick.dispose());
   quickPick.onDidChangeSelection((eventSelection) => {
     if (eventSelection[0]) {
-      window.showInformationMessage(`You chose: ${eventSelection[0].label}`);
+      console.log(`You chose: ${eventSelection[0].label}`);
     }
   });
   quickPick.onDidAccept(() => quickPick.hide())
@@ -79,7 +79,7 @@ export async function createQuickPicksMany() {
   quickPick.onDidHide(() => quickPick.dispose());
   quickPick.onDidChangeSelection((eventSelection) => {
     if (eventSelection[0]) {
-      window.showInformationMessage(`You chose: ${eventSelection[0].label}`);
+      console.log(`You chose: ${eventSelection[0].label}`);
     }
   });
   quickPick.onDidAccept(() => quickPick.hide())

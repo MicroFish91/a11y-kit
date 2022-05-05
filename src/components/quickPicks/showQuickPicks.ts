@@ -13,7 +13,7 @@ export async function showQuickPicksSingle() {
     ["Quick Pick One", "Quick Pick Two", "Quick Pick Three"],
     options
   );
-  window.showInformationMessage(`Selected: ${result}`);
+  console.log(`Selected: ${result}`);
 }
 
 export async function showQuickPicksMany() {
@@ -29,5 +29,5 @@ export async function showQuickPicksMany() {
     ["Quick Pick One", "Quick Pick Two", "Quick Pick Three"],
     options
   );
-  window.showInformationMessage(`Selected: ${result}`);
+  console.log(`Selected: ${result}`);
 }
