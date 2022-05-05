@@ -32,8 +32,8 @@ Finally, choose a menu item to demo.
   * Create Input Box Method - Without Password
   * Create Input Box Method - With Password
 
-3. Tree View
-  * Main Toolbar Icon Commands - Insert, Refresh, Clear
+3. Tree View (current default is a Binary Search Tree)
+  * Main Toolbar Icon Commands - Insert (inserts a random integer value into the tree), Refresh, Clear
   * Inline Toolbar Icons (Placeholders) - Edit, Delete
 
 
@@ -49,6 +49,6 @@ Finally, choose a menu item to demo.
 <img src="./src/resources/changeFeature.gif" alt="abkit menu display" width="50%" />
 
 
-## Adding a Change to Existing Feature
+## Adding a New Feature
 
 Coming soon...
