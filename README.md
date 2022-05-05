@@ -13,7 +13,7 @@ Option 2: Clone the repo and run 'npm install'
 
 Open the command pallette and type in "abkit".  The menu command should pop up.
 
-<img src="./src/resources/menu.gif" alt="abkit menu display" width="50%" />
+<img src="./src/resources/menu.gif" alt="abkit Menu Display" />
 
 Finally, choose a menu item to demo.
 
@@ -46,7 +46,7 @@ Finally, choose a menu item to demo.
 5. Open the UI feature folder of choice, and find your creation method. Open the file, make changes to your feature, then save.
 6. Run the change with F5 in the Extension Host mode, following the instructions in the Getting Started section.
 
-<img src="./src/resources/changeFeature.gif" alt="abkit menu display" width="50%" />
+<img src="./src/resources/changeFeature.gif" alt="Changing an Existing Feature" />
 
 
 ## Adding a New Feature
