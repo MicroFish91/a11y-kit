@@ -1,6 +1,6 @@
 import { QuickInputButton, QuickPickItem, QuickPickItemKind } from "vscode";
 
-export class CustomQuickPick implements QuickPickItem {
+export class CustomQuickPickItem implements QuickPickItem {
   public label: string;
   public kind: QuickPickItemKind;
   public description: string;

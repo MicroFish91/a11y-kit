@@ -1,6 +1,6 @@
 import { InputBox, QuickInputButton, QuickInputButtons, ThemeIcon, window } from "vscode";
 
-export async function createInputBox() {
+export function createInputBox() {
   const inputBox: InputBox = window.createInputBox();
   const inputButton: QuickInputButton = {
     iconPath: new ThemeIcon("git-merge"),
@@ -35,7 +35,7 @@ export async function createInputBox() {
   inputBox.show();
 }
 
-export async function createInputBoxWithPassword() {
+export function createInputBoxWithPassword() {
   const inputBox: InputBox = window.createInputBox();
   const inputButton: QuickInputButton = {
     iconPath: new ThemeIcon("git-merge"),
