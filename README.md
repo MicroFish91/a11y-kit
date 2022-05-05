@@ -52,3 +52,11 @@ Finally, choose a menu item to demo.
 ## Adding a New Feature
 
 Coming soon...
+
+
+## Screen Readers for Testing
+
+1. JAWS
+2. NVDA
+3. Apple Voiceover (Mac OS) - Open spotlight search and look for Apple Voiceover, or press Command-F5 to enable.
+For more information on Apple Voiceover, click [here](https://www.apple.com/voiceover/info/guide/_1121.html).
