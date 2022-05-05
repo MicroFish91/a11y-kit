@@ -3,7 +3,7 @@ import { displayMenu } from "./menu";
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
-    vscode.commands.registerCommand("abkit.selectFeature", () => displayMenu(context))
+    vscode.commands.registerCommand("abkit.menu", () => displayMenu(context))
   );
 }
 

@@ -10,16 +10,87 @@
 		"Other"
 	],
 	"activationEvents": [
-		"*"
+		"onCommand:abkit.menu"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "abkit.selectFeature",
-				"title": "Select a feature to test"
+				"command": "abkit.menu",
+				"title": "ABKit: Select a feature from the menu",
+				"shortTitle": "Menu"
+			},
+			{
+				"command": "abkit.treeViewInsert",
+				"title": "Insert",
+				"icon": "./src/resources/edit.svg"
+			},
+			{
+				"command": "abkit.treeViewRefresh",
+				"title": "Refresh",
+				"icon": "./src/resources/refresh.svg"
+			},
+			{
+				"command": "abkit.treeViewClear",
+				"title": "Clear"
+			},
+			{
+				"command": "abkit.treeViewEditEntry",
+				"title": "Edit",
+				"icon": "./src/resources/edit.svg"
+			},
+			{
+				"command": "abkit.treeViewDeleteEntry",
+				"title": "Delete"
 			}
-		]
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "abkit.treeViewInsert",
+					"when": "view == treeView",
+					"group": "navigation"
+				},
+				{
+					"command": "abkit.treeViewRefresh",
+					"when": "view == treeView",
+					"group": "navigation"
+				},
+				{
+					"command": "abkit.treeViewClear",
+					"when": "view == treeView"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "abkit.treeViewEditEntry",
+					"when": "view == treeView && viewItem == bstNode",
+					"group": "inline"
+				},
+				{
+					"command": "abkit.treeViewDeleteEntry",
+					"when": "view == treeView && viewItem == bstNode"
+				}
+			]
+		},
+		"views": {
+			"tree-view": [
+				{
+					"id": "treeView",
+					"name": "Tree View",
+					"contextualTitle": "Tree View"
+				}
+			]
+		},
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "tree-view",
+					"title": "Tree View",
+					"icon": "./src/resources/dep.svg"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
