@@ -1,4 +1,4 @@
-# abkit README
+# Accessibility Testkit (ABKit)
 
 This is the README for your extension "abkit". After writing up a brief description, we recommend including the following sections.
 

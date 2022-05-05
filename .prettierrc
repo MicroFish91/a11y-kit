@@ -1,8 +1,0 @@
-{
-  "tabWidth": 2,
-  "useTabs": false,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "all",
-  "printWidth": 105
-}

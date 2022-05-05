@@ -1,11 +1,11 @@
-import { commands, Disposable, ExtensionContext, window } from "vscode";
-import { BinarySearchTreeProvider } from "./BinarySearchTreeProvider";
+import { commands, window } from "vscode";
+import { BinarySearchTreeProvider } from "../components/treeView";
 
-export async function initTreeView (context: ExtensionContext) {
+export function treeCommands() {
   const bstProvider = new BinarySearchTreeProvider();
   window.registerTreeDataProvider("treeView", bstProvider);
 
-  context.subscriptions.concat([
+  return [
     commands.registerCommand("abkit.treeViewInsert", () => {
       const val = Math.floor(Math.random() * 30 + 1);
       bstProvider.insertTreeItem(val);
@@ -24,5 +24,5 @@ export async function initTreeView (context: ExtensionContext) {
       bstProvider.root = null;
       bstProvider.refresh();
     })
-  ]);
+  ];
 }

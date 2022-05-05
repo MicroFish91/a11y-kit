@@ -1,4 +1,4 @@
-import { createCbMapper, createMenuItems } from "../utils";
+import { createCbMapper, createMenuItems } from "../../utils";
 import { createInputBox, createInputBoxWithPassword } from "./createInputBox";
 import { showInputBox, showInputBoxWithPassword } from "./showInputBox";
 

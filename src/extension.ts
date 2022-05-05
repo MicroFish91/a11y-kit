@@ -1,10 +1,9 @@
 import * as vscode from "vscode";
-import { displayMenu } from "./menu";
+import { registerCommands } from "./commands";
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand("abkit.menu", () => displayMenu(context))
-  );
+  console.log("Starting ABKit extension.");
+  registerCommands(context);
 }
 
 // this method is called when your extension is deactivated

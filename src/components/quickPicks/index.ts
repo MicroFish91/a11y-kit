@@ -1,4 +1,4 @@
-import { createCbMapper, createMenuItems, OptionsList } from "../utils";
+import { createCbMapper, createMenuItems, OptionsList } from "../../utils";
 import { createQuickPicksMany, createQuickPicksSingle } from "./createQuickPicks";
 import { showQuickPicksMany, showQuickPicksSingle } from "./showQuickPicks";
 

@@ -1,7 +1,7 @@
 import { ExtensionContext, window } from "vscode";
-import { inputBoxCbMap, inputBoxMenuItems } from "./inputBox";
-import { quickPickCbMap, quickPickMenuItems } from "./quickPicks";
-import { treeViewCbMap, treeViewMenuItems } from "./treeView";
+import { inputBoxCbMap, inputBoxMenuItems } from "./components/inputBox";
+import { quickPickCbMap, quickPickMenuItems } from "./components/quickPicks";
+import { treeViewCbMap, treeViewMenuItems } from "./components/treeView";
 
 export async function displayMenu(context: ExtensionContext) {
   const cbMaps = { ...quickPickCbMap, ...inputBoxCbMap, ...treeViewCbMap };

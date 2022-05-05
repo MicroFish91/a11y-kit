@@ -1,5 +1,4 @@
 import {
-  AccessibilityInformation,
   Event,
   EventEmitter,
   ProviderResult,
@@ -91,9 +90,9 @@ export class bstNode extends TreeItem {
   iconPath = new ThemeIcon("type-hierarchy");
   contextValue = "bstNode";
   // command: Command
-  accessibilityInformation?: AccessibilityInformation | undefined = {
-    label: "Binary Tree Node Accessibility Label",
-    // https://w3c.github.io/aria/#widget_roles
-    role: "treeitem",
-  };
+  // accessibilityInformation?: AccessibilityInformation | undefined = {
+  //   label: "Binary Tree Node Accessibility Label",
+  //   // https://w3c.github.io/aria/#widget_roles
+  //   role: "treeitem",
+  // };
 }
