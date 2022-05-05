@@ -1,70 +1,54 @@
-# Accessibility Testkit (ABKit)
+# Accessibility Testkit
 
-This is the README for your extension "abkit". After writing up a brief description, we recommend including the following sections.
+Accessibility Testkit (ABKit) is a menu-driven extension that allows users to quickly demo a small subset of VSCode's
+common UI features with different base configuration sets.  ABKit's fast feature demo'ing enables the user to quickly check
+UI configurations for screen reader compliance.
+
+
+## Getting Started
+
+Option 1: Search for and install ABKit from VSCode's Extension Marketplace.
+
+Option 2: Clone the repo and run 'npm install'
+
+Open the command pallette and type in "abkit".  The menu command should pop up.
+
+<img src="./src/resources/menu.gif" alt="abkit menu display" width="50%" />
+
+Finally, choose a menu item to demo.
+
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+1. Quick Picks
+  * Show Quick Picks Method - Single Selection
+  * Show Quick Picks Method - Multiple Selection
+  * Create Quick Picks Method - Single Selection
+  * Create Quick Picks Method - Multiple Selection
 
-For example if there is an image subfolder under your extension project workspace:
+2. Input Box
+  * Show Input Box Method - Without Password
+  * Show Input Box Method - With Password
+  * Create Input Box Method - Without Password
+  * Create Input Box Method - With Password
 
-\!\[feature X\]\(images/feature-x.png\)
+3. Tree View
+  * Main Toolbar Icon Commands - Insert, Refresh, Clear
+  * Inline Toolbar Icons (Placeholders) - Edit, Delete
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+## Demo a Change to Existing Feature
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Clone the repository
+2. Install dependencies (npm install)
+3. Optional - Create a branch (`git checkout -b <testBranchName>`)
+4. Navigate to "src/components/".  These are the list of the current VSCode UI features.
+5. Open the UI feature folder of choice, and find your creation method. Open the file, make changes to your feature, then save.
+6. Run the change with F5 in the Extension Host mode, following the instructions in the Getting Started section.
 
-## Extension Settings
+<img src="./src/resources/changeFeature.gif" alt="abkit menu display" width="50%" />
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-For example:
+## Adding a Change to Existing Feature
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Coming soon...
