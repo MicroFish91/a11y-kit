@@ -6,23 +6,23 @@ export function treeCommands() {
   window.registerTreeDataProvider("treeView", bstProvider);
 
   return [
-    commands.registerCommand("abkit.treeViewInsert", () => {
+    commands.registerCommand("a11y-kit.treeViewInsert", () => {
       const val = Math.floor(Math.random() * 30 + 1);
       bstProvider.insertTreeItem(val);
       bstProvider.refresh();
     }),
-    commands.registerCommand("abkit.treeViewRefresh", () => {
+    commands.registerCommand("a11y-kit.treeViewRefresh", () => {
       bstProvider.refresh();
     }),
-    commands.registerCommand("abkit.treeViewEditEntry", () => {
+    commands.registerCommand("a11y-kit.treeViewEditEntry", () => {
       console.log("Editing entry.");
     }),
-    commands.registerCommand("abkit.treeViewDeleteEntry", () => {
+    commands.registerCommand("a11y-kit.treeViewDeleteEntry", () => {
       console.log("Deleting entry.");
     }),
-    commands.registerCommand("abkit.treeViewClear", () => {
+    commands.registerCommand("a11y-kit.treeViewClear", () => {
       bstProvider.root = null;
       bstProvider.refresh();
-    })
+    }),
   ];
 }
