@@ -45,7 +45,7 @@ export function createQuickPicksSingle() {
   quickPick.canSelectMany = false;
   quickPick.items = [
     new CustomQuickPickItem(
-      "Quick Pick Item One Default",
+      "$(git-merge) Quick Pick Item One Default",
       QuickPickItemKind.Default,
       quickPickBtns[0]
     ),
@@ -113,7 +113,7 @@ export function createQuickPicksMany() {
   quickPick.canSelectMany = true;
   quickPick.items = [
     new CustomQuickPickItem(
-      "Quick Pick Item One Default",
+      "$(git-merge) Quick Pick Item One Default",
       QuickPickItemKind.Default,
       quickPickBtns[0]
     ),

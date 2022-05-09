@@ -10,7 +10,7 @@ export async function showQuickPicksSingle() {
     canPickMany: false,
   };
   const result = await window.showQuickPick(
-    ["Quick Pick One", "Quick Pick Two", "Quick Pick Three"],
+    ["$(git-merge) Quick Pick One", "Quick Pick Two", "Quick Pick Three"],
     options
   );
   console.log(`Selected: ${result}`);
@@ -26,7 +26,7 @@ export async function showQuickPicksMany() {
     canPickMany: true,
   };
   const result = await window.showQuickPick(
-    ["Quick Pick One", "Quick Pick Two", "Quick Pick Three"],
+    ["$(git-merge) Quick Pick One", "Quick Pick Two", "Quick Pick Three"],
     options
   );
   console.log(`Selected: ${result}`);
