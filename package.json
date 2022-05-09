@@ -3,7 +3,11 @@
   "displayName": "accessibility-testkit",
   "description": "a11y-kit enables the user to quickly check VS Code UI configurations for screen reader compliance",
   "version": "0.0.1",
-  "publisher": "MicroFish91",
+  "publisher": "MicroFish",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MicroFish91/a11y-kit.git"
+  },
   "engines": {
     "vscode": "^1.66.0"
   },
