@@ -12,7 +12,7 @@ UI configurations for screen reader compliance.
 
 Open the command pallette and type in "a11y", "menu", or "accessibility". The menu command should pop up under "a11y-kit: ..."
 
-<img src="./resources/menu.gif" alt="a11y-kit Menu Display" />
+<img src="https://github.com/MicroFish91/a11y-kit/blob/main/resources/menu.gif?raw=true" alt="a11y-kit Menu Display" />
 
 Finally, choose a menu item to demo.
 
@@ -28,14 +28,17 @@ Their relative file locations in the repository are also listed below.
 File Path: "src/components/quickPicks/showQuickPicks.ts" => showQuickPicksSingle()
 
 #### b) Show Quick Picks Method - Multiple Selection
+
 File Path: "src/components/quickPicks/showQuickPicks.ts" => showQuickPicksMany()
 
 #### c) Create Quick Picks Method - Single Selection
+
 Quick Pick Path: "src/components/quickPicks/createQuickPicks.ts" => createQuickPicksSingle()
 <br />
 Quick Pick Item Path: "src/components/quickPicks/CustomQuickPickItem.ts"
 
 #### d) Create Quick Picks Method - Multiple Selection
+
 Quick Pick Path: "src/components/quickPicks/createQuickPicks.ts" => createQuickPicksMany()
 <br />
 Quick Pick Item Path: "src/components/quickPicks/CustomQuickPickItem.ts"
@@ -43,15 +46,19 @@ Quick Pick Item Path: "src/components/quickPicks/CustomQuickPickItem.ts"
 ### Input Box:
 
 #### a) Show Input Box Method - Without Password
+
 File Path: "src/components/inputBox/showInputBox.ts" => showInputBox()
 
 #### b) Show Input Box Method - With Password
+
 File Path: "src/components/inputBox/showInputBox.ts" => showInputBoxWithPassword()
 
 #### c) Create Input Box Method - Without Password
+
 File Path: "src/components/inputBox/createInputBox.ts" => createInputBox()
 
 #### d) Create Input Box Method - With Password
+
 File Path: "src/components/inputBox/createInputBox.ts" => createInputBoxWithPassword()
 
 ### Tree View (current default is a Binary Search Tree):
@@ -71,7 +78,7 @@ File Path: "src/components/treeView/BinarySearchTreeProvider.ts"
 5. Open the UI feature folder of choice, and find your creation method. Open the file, make changes to your feature, then save.
 6. Run the change with F5 in the Extension Host mode, following the instructions in the Getting Started section.
 
-<img src="./resources/changeFeature.gif" alt="Changing an Existing Feature" />
+<img src="https://github.com/MicroFish91/a11y-kit/blob/main/resources/changeFeature.gif?raw=true" alt="Changing an Existing Feature" />
 
 ## Adding a New Feature
 
@@ -83,3 +90,7 @@ Coming soon...
 2. <b>NVDA</b>: Download [here](https://www.nvaccess.org/download/). Quick start, press: control + alt + n
 3. <b>Apple Voiceover (Mac OS)</b>: Open spotlight search and look for Apple Voiceover, or press Command-F5 to enable.
    For more information on Apple Voiceover, click [here](https://www.apple.com/voiceover/info/guide/_1121.html).
+
+## Attribution
+
+Icon created by Freepik at Flaticon

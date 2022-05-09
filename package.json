@@ -2,6 +2,7 @@
   "name": "accessibility-testkit",
   "displayName": "a11y-kit",
   "description": "a11y-kit enables the user to quickly check VS Code UI configurations for screen reader compliance",
+  "icon": "resources/laptop.png",
   "version": "0.0.1",
   "publisher": "MicroFish",
   "repository": {
@@ -28,7 +29,7 @@
       {
         "command": "a11y-kit.treeViewInsert",
         "title": "Insert",
-        "icon": "./resources/edit.svg"
+        "icon": "resources/edit.svg"
       },
       {
         "command": "a11y-kit.treeViewRefresh",
@@ -42,7 +43,7 @@
       {
         "command": "a11y-kit.treeViewEditEntry",
         "title": "Edit",
-        "icon": "./resources/edit.svg"
+        "icon": "resources/edit.svg"
       },
       {
         "command": "a11y-kit.treeViewDeleteEntry",
@@ -92,7 +93,7 @@
         {
           "id": "tree-view",
           "title": "Tree View",
-          "icon": "./resources/dep.svg"
+          "icon": "resources/dep.svg"
         }
       ]
     }
