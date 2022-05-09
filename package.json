@@ -28,12 +28,12 @@
       {
         "command": "a11y-kit.treeViewInsert",
         "title": "Insert",
-        "icon": "./src/resources/edit.svg"
+        "icon": "./resources/edit.svg"
       },
       {
         "command": "a11y-kit.treeViewRefresh",
         "title": "Refresh",
-        "icon": "./src/resources/refresh.svg"
+        "icon": "./resources/refresh.svg"
       },
       {
         "command": "a11y-kit.treeViewClear",
@@ -42,7 +42,7 @@
       {
         "command": "a11y-kit.treeViewEditEntry",
         "title": "Edit",
-        "icon": "./src/resources/edit.svg"
+        "icon": "./resources/edit.svg"
       },
       {
         "command": "a11y-kit.treeViewDeleteEntry",
@@ -92,7 +92,7 @@
         {
           "id": "tree-view",
           "title": "Tree View",
-          "icon": "./src/resources/dep.svg"
+          "icon": "./resources/dep.svg"
         }
       ]
     }
