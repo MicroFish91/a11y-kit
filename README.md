@@ -6,9 +6,9 @@ UI configurations for screen reader compliance.
 
 ## Getting Started
 
-Option 1: Search for and install a11y-kit from VSCode's Extension Marketplace.
+<b><u>Option 1</u></b>: Search for and install a11y-kit from VSCode's Extension Marketplace.
 
-Option 2: Clone the repo and run 'npm install'
+<b><u>Option 2</u></b>: Clone the repo and run 'npm install'
 
 Open the command pallette and type in "a11y", "menu", or "accessibility". The menu command should pop up under "a11y-kit: ..."
 
@@ -18,35 +18,49 @@ Finally, choose a menu item to demo.
 
 ## Features & File Paths for Changing Options
 
-1. Quick Picks
+The following sections highlight all the UI components that are available for preview through this extension.
+Their relative file locations in the repository are also listed below.
 
-- Show Quick Picks Method - Single Selection
-  - "src/components/quickPicks/showQuickPicks.ts" => showQuickPicksSingle()
-- Show Quick Picks Method - Multiple Selection
-  - "src/components/quickPicks/showQuickPicks.ts" => showQuickPicksMany()
-- Create Quick Picks Method - Single Selection
-  - Quick Pick: "src/components/quickPicks/createQuickPicks.ts" => createQuickPicksSingle()
-  - Quick Pick Item: "src/components/quickPicks/CustomQuickPickItem.ts"
-- Create Quick Picks Method - Multiple Selection
-  - Quick Pick: "src/components/quickPicks/createQuickPicks.ts" => createQuickPicksMany()
-  - Quick Pick Item: "src/components/quickPicks/CustomQuickPickItem.ts"
+### Quick Picks:
 
-2. Input Box
+#### a) Show Quick Picks Method - Single Selection
 
-- Show Input Box Method - Without Password
-  - "src/components/inputBox/showInputBox.ts" => showInputBox()
-- Show Input Box Method - With Password
-  - "src/components/inputBox/showInputBox.ts" => showInputBoxWithPassword()
-- Create Input Box Method - Without Password
-  - "src/components/inputBox/createInputBox.ts" => createInputBox()
-- Create Input Box Method - With Password
-  - "src/components/inputBox/createInputBox.ts" => createInputBoxWithPassword()
+File Path: "src/components/quickPicks/showQuickPicks.ts" => showQuickPicksSingle()
 
-3. Tree View (current default is a Binary Search Tree)
+#### b) Show Quick Picks Method - Multiple Selection
+File Path: "src/components/quickPicks/showQuickPicks.ts" => showQuickPicksMany()
 
-- Main Toolbar Icon Commands - Insert (inserts a random integer value into the tree), Refresh, Clear
-- Inline Toolbar Icons (Placeholders) - Edit, Delete
-- File Path: "src/components/treeView/BinarySearchTreeProvider.ts"
+#### c) Create Quick Picks Method - Single Selection
+Quick Pick Path: "src/components/quickPicks/createQuickPicks.ts" => createQuickPicksSingle()
+<br />
+Quick Pick Item Path: "src/components/quickPicks/CustomQuickPickItem.ts"
+
+#### d) Create Quick Picks Method - Multiple Selection
+Quick Pick Path: "src/components/quickPicks/createQuickPicks.ts" => createQuickPicksMany()
+<br />
+Quick Pick Item Path: "src/components/quickPicks/CustomQuickPickItem.ts"
+
+### Input Box:
+
+#### a) Show Input Box Method - Without Password
+File Path: "src/components/inputBox/showInputBox.ts" => showInputBox()
+
+#### b) Show Input Box Method - With Password
+File Path: "src/components/inputBox/showInputBox.ts" => showInputBoxWithPassword()
+
+#### c) Create Input Box Method - Without Password
+File Path: "src/components/inputBox/createInputBox.ts" => createInputBox()
+
+#### d) Create Input Box Method - With Password
+File Path: "src/components/inputBox/createInputBox.ts" => createInputBoxWithPassword()
+
+### Tree View (current default is a Binary Search Tree):
+
+<b><u>Main Toolbar Icon Commands</u></b>: Insert (inserts a random integer value into the tree), Refresh, Clear
+<br />
+<b><u>Inline Toolbar Icons (Placeholders)</u></b>: Edit, Delete
+<br /> <br />
+File Path: "src/components/treeView/BinarySearchTreeProvider.ts"
 
 ## Demo a Change to Existing Feature
 
@@ -65,7 +79,7 @@ Coming soon...
 
 ## Screen Readers for Testing
 
-1. JAWS - Download [here](https://support.freedomscientific.com/Downloads/JAWS).
-2. NVDA - Download [here](https://www.nvaccess.org/download/). Quick start, press: control + alt + n
-3. Apple Voiceover (Mac OS) - Open spotlight search and look for Apple Voiceover, or press Command-F5 to enable.
+1. <b>JAWS</b>: Download [here](https://support.freedomscientific.com/Downloads/JAWS).
+2. <b>NVDA</b>: Download [here](https://www.nvaccess.org/download/). Quick start, press: control + alt + n
+3. <b>Apple Voiceover (Mac OS)</b>: Open spotlight search and look for Apple Voiceover, or press Command-F5 to enable.
    For more information on Apple Voiceover, click [here](https://www.apple.com/voiceover/info/guide/_1121.html).
