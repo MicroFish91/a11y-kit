@@ -37,6 +37,7 @@ export function createQuickPicksSingle() {
     ],
   ];
 
+  quickPick.title = "Quick Pick Title";
   quickPick.value = "";
   quickPick.placeholder = "Quick Pick Placeholder";
   quickPick.matchOnDescription = true;
@@ -105,6 +106,7 @@ export function createQuickPicksMany() {
     ],
   ];
 
+  quickPick.title = "Quick Pick Title";
   quickPick.value = "";
   quickPick.placeholder = "Quick Pick Placeholder";
   quickPick.matchOnDescription = true;
