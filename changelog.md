@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.0] - \*5/15/2022
+
+Official Release
+
 ## [0.0.2]
 
 Changes: <br />
