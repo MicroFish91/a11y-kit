@@ -9,7 +9,11 @@ export class CustomQuickPickItem implements QuickPickItem {
   public picked: boolean = false;
   public alwaysShow: boolean = false;
 
-  constructor(label: string, kind: QuickPickItemKind, public buttons?: QuickInputButton[]) {
+  constructor(
+    label: string,
+    kind: QuickPickItemKind,
+    public buttons?: QuickInputButton[]
+  ) {
     this.label = `${label}`;
     this.kind = kind;
     this.description = `${label} - Description`;

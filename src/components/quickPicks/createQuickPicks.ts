@@ -16,23 +16,23 @@ export function createQuickPicksSingle() {
     [
       {
         iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item One - Icon Tooltip",
+        tooltip: "Item One - Icon Tooltip",
       },
     ],
     [
       {
         iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Three - Icon Tooltip",
+        tooltip: "Item Two - Icon Tooltip",
       },
     ],
     [
       {
         iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Two - Icon Tooltip",
+        tooltip: "Item Three - Icon Tooltip",
       },
       {
         iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Two - Icon Tooltip",
+        tooltip: "Item Three - Icon Tooltip",
       },
     ],
   ];
@@ -46,17 +46,17 @@ export function createQuickPicksSingle() {
   quickPick.canSelectMany = false;
   quickPick.items = [
     new CustomQuickPickItem(
-      "$(git-merge) Quick Pick Item One Default",
+      "$(git-merge) Item One",
       QuickPickItemKind.Default,
       quickPickBtns[0]
     ),
     new CustomQuickPickItem(
-      "Quick Pick Item Two Separator",
+      "Item Two Separator",
       QuickPickItemKind.Separator,
       quickPickBtns[1]
     ),
     new CustomQuickPickItem(
-      "Quick Pick Item Three Default",
+      "Item Three",
       QuickPickItemKind.Default,
       quickPickBtns[2]
     ),
@@ -85,23 +85,23 @@ export function createQuickPicksMany() {
     [
       {
         iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item One - Icon Tooltip",
+        tooltip: "Item One - Icon Tooltip",
       },
     ],
     [
       {
         iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Three - Icon Tooltip",
+        tooltip: "Item Two - Icon Tooltip",
       },
     ],
     [
       {
         iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Two - Icon Tooltip",
+        tooltip: "Item Three - Icon Tooltip",
       },
       {
         iconPath: new ThemeIcon("git-merge"),
-        tooltip: "Quick Pick Item Two - Icon Tooltip",
+        tooltip: "Item Three - Icon Tooltip",
       },
     ],
   ];
@@ -115,17 +115,17 @@ export function createQuickPicksMany() {
   quickPick.canSelectMany = true;
   quickPick.items = [
     new CustomQuickPickItem(
-      "$(git-merge) Quick Pick Item One Default",
+      "$(git-merge) Item One",
       QuickPickItemKind.Default,
       quickPickBtns[0]
     ),
     new CustomQuickPickItem(
-      "Quick Pick Item Two Separator",
+      "Item Two Separator",
       QuickPickItemKind.Separator,
       quickPickBtns[1]
     ),
     new CustomQuickPickItem(
-      "Quick Pick Item Three Default",
+      "Item Three",
       QuickPickItemKind.Default,
       quickPickBtns[2]
     ),

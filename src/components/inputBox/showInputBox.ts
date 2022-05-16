@@ -11,7 +11,7 @@ export async function showInputBox() {
     ignoreFocusOut: true,
     validateInput: (input: string) => {
       return input.length < 6 ? "Must be at least 6 characters." : null;
-    }
+    },
   };
   const result = await window.showInputBox(options);
   console.log(`You wrote: ${result}`);
@@ -28,7 +28,7 @@ export async function showInputBoxWithPassword() {
     ignoreFocusOut: true,
     validateInput: (input: string) => {
       return input.length < 6 ? "Must be at least 6 characters." : null;
-    }
+    },
   };
   const result = await window.showInputBox(options);
   console.log(`You wrote: ${result}`);

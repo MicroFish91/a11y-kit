@@ -2,10 +2,10 @@ import { QuickPickOptions, window } from "vscode";
 
 export async function showQuickPicksSingle() {
   const options: QuickPickOptions = {
-    title: "Quick Pick Placeholder Title",
+    title: "Quick Pick Title",
     matchOnDescription: true,
     matchOnDetail: true,
-    placeHolder: "Quick Pick Placeholder Text",
+    placeHolder: "Quick Pick Placeholder",
     ignoreFocusOut: true,
     canPickMany: false,
   };
@@ -18,10 +18,10 @@ export async function showQuickPicksSingle() {
 
 export async function showQuickPicksMany() {
   const options: QuickPickOptions = {
-    title: "Quick Pick Placeholder Title",
+    title: "Quick Pick Title",
     matchOnDescription: true,
     matchOnDetail: true,
-    placeHolder: "Quick Pick Placeholder Text",
+    placeHolder: "Quick Pick Placeholder",
     ignoreFocusOut: true,
     canPickMany: true,
   };

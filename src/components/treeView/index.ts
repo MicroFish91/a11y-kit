@@ -5,7 +5,7 @@ export * from "./BinarySearchTreeProvider";
 
 export const TV_OPTIONS: OptionsList[] = [
   {
-    label: "Tree View - Display Tree",
+    label: "Display Tree View",
     description: "displayTreeView",
     cb: displayTreeView,
   },
