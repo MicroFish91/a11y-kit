@@ -5,13 +5,17 @@ import {
   ThemeIcon,
   TreeDataProvider,
   TreeItem,
-  TreeItemCollapsibleState
+  TreeItemCollapsibleState,
 } from "vscode";
 
 export class BinarySearchTreeProvider implements TreeDataProvider<bstNode> {
-  public root: bstNode | null;
+  private root: bstNode | null;
 
   public constructor() {
+    this.root = null;
+  }
+
+  public clearTree() {
     this.root = null;
   }
 
@@ -65,9 +69,9 @@ export class BinarySearchTreeProvider implements TreeDataProvider<bstNode> {
     this._onDidChangeTreeData.fire();
   }
 
-  private _onDidChangeTreeData: EventEmitter<bstNode | undefined | null | void> = new EventEmitter<
+  private _onDidChangeTreeData: EventEmitter<
     bstNode | undefined | null | void
-  >();
+  > = new EventEmitter<bstNode | undefined | null | void>();
 
   readonly onDidChangeTreeData: Event<bstNode | undefined | null | void> =
     this._onDidChangeTreeData.event;

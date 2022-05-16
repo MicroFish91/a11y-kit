@@ -1,9 +1,21 @@
-import { commands, window } from "vscode";
-import { BinarySearchTreeProvider } from "../components/treeView";
+import { commands, TreeView, TreeViewOptions, window } from "vscode";
+import { BinarySearchTreeProvider, bstNode } from "../components/treeView";
 
 export function treeCommands() {
   const bstProvider = new BinarySearchTreeProvider();
-  window.registerTreeDataProvider("treeView", bstProvider);
+  const treeViewOptions: TreeViewOptions<bstNode> = {
+    treeDataProvider: bstProvider,
+    showCollapseAll: true,
+    canSelectMany: true,
+  };
+  const treeView: TreeView<bstNode> = window.createTreeView(
+    "treeView",
+    treeViewOptions
+  );
+
+  treeView.message = "Press the 'insert' icon to add nodes";
+  treeView.title = "BST";
+  treeView.description = "description";
 
   return [
     commands.registerCommand("a11y-kit.treeViewInsert", () => {
@@ -21,7 +33,7 @@ export function treeCommands() {
       console.log("Deleting entry.");
     }),
     commands.registerCommand("a11y-kit.treeViewClear", () => {
-      bstProvider.root = null;
+      bstProvider.clearTree();
       bstProvider.refresh();
     }),
   ];
