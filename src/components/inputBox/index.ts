@@ -1,10 +1,8 @@
-import { QuickPickItemKind } from "vscode";
-import { createCbMapper, createMenuItems } from "../../utils";
-import { CustomQuickPickItem } from "../quickPicks/CustomQuickPickItem";
+import { IComponent } from "../../menu/IComponent";
 import { createInputBox, createInputBoxWithPassword } from "./createInputBox";
 import { showInputBox, showInputBoxWithPassword } from "./showInputBox";
 
-export const IB_OPTIONS = [
+const IB_OPTIONS = [
   {
     label: "Show Input Box without Password",
     description: "showInputBox",
@@ -27,9 +25,9 @@ export const IB_OPTIONS = [
   },
 ];
 
-export const inputBoxCbMap = createCbMapper(IB_OPTIONS);
+const label: string = "Input Box";
 
-export const inputBoxMenuItems = [
-  new CustomQuickPickItem("Input Box", QuickPickItemKind.Separator),
-  ...createMenuItems(IB_OPTIONS),
-];
+export const ibComponent: IComponent = {
+  label,
+  optionsList: IB_OPTIONS
+};
