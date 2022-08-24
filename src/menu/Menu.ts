@@ -1,11 +1,19 @@
-import { QuickPickItemKind } from "vscode";
+import { ExtensionContext, QuickPickItemKind, window } from "vscode";
 import { CustomQuickPickItem } from "../components/quickPicks/CustomQuickPickItem";
 import { IComponent } from "./IComponent";
 import { IOptionsList } from "./IOptionsList";
 
 export class Menu {
-    public menuItems: Omit<IOptionsList, 'cb'>[] = [];
-    public cbMaps: Record<string, IOptionsList['cb']> = {};
+    private menuItems: Omit<IOptionsList, 'cb'>[] = [];
+    private cbMaps: Record<string, IOptionsList['cb']> = {};
+
+    public constructor (private context: ExtensionContext) {}
+
+    public async display(): Promise<void> {
+        const picked = await window.showQuickPick(this.menuItems);
+        if (!picked) return;
+        this.cbMaps[picked.description](this.context);
+    }
 
     public addComponents(...components: IComponent[]): void {
         if (!components?.length) throw new Error('Invalid format, could not add component.');
