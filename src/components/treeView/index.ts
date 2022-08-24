@@ -1,9 +1,9 @@
 import { commands } from "vscode";
 import { IComponent } from "../../menu/IComponent";
-import { OptionsList } from "../../utils";
+import { IComponentOption } from "../../menu/IComponentOption";
 export * from "./BinarySearchTreeProvider";
 
-const TV_OPTIONS: OptionsList[] = [
+const TV_OPTIONS: IComponentOption[] = [
   {
     label: "Display Tree View",
     description: "displayTreeView",

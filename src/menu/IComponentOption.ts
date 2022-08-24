@@ -1,6 +1,6 @@
 import { ExtensionContext } from "vscode";
 
-export interface IOptionsList {
+export interface IComponentOption {
     label: string;
     description: string;
     cb: (context: ExtensionContext) => any;

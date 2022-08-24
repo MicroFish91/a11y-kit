@@ -1,12 +1,12 @@
 import { IComponent } from "../../menu/IComponent";
-import {  OptionsList } from "../../utils";
+import { IComponentOption } from "../../menu/IComponentOption";
 import {
   createQuickPicksMany,
   createQuickPicksSingle,
 } from "./createQuickPicks";
 import { showQuickPicksMany, showQuickPicksSingle } from "./showQuickPicks";
 
-const QP_OPTIONS: OptionsList[] = [
+const QP_OPTIONS: IComponentOption[] = [
   {
     label: "Show Quick Picks - Single",
     description: "showQuickPicksSingle",

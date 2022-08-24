@@ -1,8 +1,9 @@
 import { IComponent } from "../../menu/IComponent";
+import { IComponentOption } from "../../menu/IComponentOption";
 import { createInputBox, createInputBoxWithPassword } from "./createInputBox";
 import { showInputBox, showInputBoxWithPassword } from "./showInputBox";
 
-const IB_OPTIONS = [
+const IB_OPTIONS: IComponentOption[] = [
   {
     label: "Show Input Box without Password",
     description: "showInputBox",

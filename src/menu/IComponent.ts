@@ -1,6 +1,6 @@
-import { IOptionsList } from "./IOptionsList";
+import { IComponentOption } from "./IComponentOption";
 
 export interface IComponent {
     label: string;
-    optionsList: IOptionsList[];
+    optionsList: IComponentOption[];
 }
