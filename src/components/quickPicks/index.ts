@@ -1,13 +1,12 @@
-import { QuickPickItemKind } from "vscode";
-import { createCbMapper, createMenuItems, OptionsList } from "../../utils";
+import { IComponent } from "../../menu/IComponent";
+import {  OptionsList } from "../../utils";
 import {
   createQuickPicksMany,
   createQuickPicksSingle,
 } from "./createQuickPicks";
-import { CustomQuickPickItem } from "./CustomQuickPickItem";
 import { showQuickPicksMany, showQuickPicksSingle } from "./showQuickPicks";
 
-export const QP_OPTIONS: OptionsList[] = [
+const QP_OPTIONS: OptionsList[] = [
   {
     label: "Show Quick Picks - Single",
     description: "showQuickPicksSingle",
@@ -30,8 +29,9 @@ export const QP_OPTIONS: OptionsList[] = [
   },
 ];
 
-export const quickPickCbMap = createCbMapper(QP_OPTIONS);
-export const quickPickMenuItems = [
-  new CustomQuickPickItem("Quick Picks", QuickPickItemKind.Separator),
-  ...createMenuItems(QP_OPTIONS),
-];
+const label: string = "Quick Picks";
+
+export const qpComponent: IComponent = {
+  label,
+  optionsList: QP_OPTIONS
+};

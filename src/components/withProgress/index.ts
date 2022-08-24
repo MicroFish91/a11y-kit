@@ -1,10 +1,9 @@
-import { ProgressLocation, QuickPickItemKind } from "vscode";
-import { createCbMapper, createMenuItems, OptionsList } from "../../utils";
-import { CustomQuickPickItem } from "../quickPicks/CustomQuickPickItem";
+import { ProgressLocation } from "vscode";
+import { IComponent } from "../../menu/IComponent";
+import { OptionsList } from "../../utils";
 import { withProgress } from "./withProgress";
 
-
-export const WP_OPTIONS: OptionsList[] = [
+const WP_OPTIONS: OptionsList[] = [
   {
     label: "With Progress - Notification",
     description: "withProgressNotification",
@@ -17,8 +16,9 @@ export const WP_OPTIONS: OptionsList[] = [
   },
 ];
 
-export const withProgressCbMap = createCbMapper(WP_OPTIONS);
-export const withProgressMenuItems = [
-  new CustomQuickPickItem("Progress", QuickPickItemKind.Separator),
-  ...createMenuItems(WP_OPTIONS),
-];
+const label: string = "Progress";
+
+export const wpComponent: IComponent = {
+  label,
+  optionsList: WP_OPTIONS
+}
