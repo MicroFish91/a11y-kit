@@ -16,7 +16,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:a11y-kit.menu"
+    "onCommand:a11y-kit.menu",
+    "onCommand:a11y-kit.sandbox"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -25,6 +26,11 @@
         "command": "a11y-kit.menu",
         "title": "a11y-kit: Select UI feature from menu for accessibility",
         "shortTitle": "Menu"
+      },
+      {
+        "command": "a11y-kit.sandbox",
+        "title": "a11y-kit: VS Code UI Component Sandbox",
+        "shortTitle": "Sandbox"
       },
       {
         "command": "a11y-kit.treeViewInsert",
