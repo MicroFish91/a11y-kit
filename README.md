@@ -16,73 +16,13 @@ Open the command pallette and type in "a11y", "menu", or "accessibility". The me
 
 Finally, choose a menu item to demo.
 
-## Features & File Paths for Changing Options
+## UI Components
 
-The following sections highlight all the UI components that are available for preview through this extension.
-Their relative file locations in the repository are also listed below.
+UI components are listed in the `components` folder.  Any changes to the test components should be made here.
 
-### Quick Picks:
+<img src="https://github.com/MicroFish91/a11y-kit/blob/main/resources/changeFeature.gif?raw=true" alt="a11y-kit Menu Display" />
 
-#### a) Show Quick Picks Method - Single Selection
-
-File Path: "src/components/quickPicks/showQuickPicks.ts" => showQuickPicksSingle()
-
-#### b) Show Quick Picks Method - Multiple Selection
-
-File Path: "src/components/quickPicks/showQuickPicks.ts" => showQuickPicksMany()
-
-#### c) Create Quick Picks Method - Single Selection
-
-Quick Pick Path: "src/components/quickPicks/createQuickPicks.ts" => createQuickPicksSingle()
-<br />
-Quick Pick Item Path: "src/components/quickPicks/CustomQuickPickItem.ts"
-
-#### d) Create Quick Picks Method - Multiple Selection
-
-Quick Pick Path: "src/components/quickPicks/createQuickPicks.ts" => createQuickPicksMany()
-<br />
-Quick Pick Item Path: "src/components/quickPicks/CustomQuickPickItem.ts"
-
-### Input Box:
-
-#### a) Show Input Box Method - Without Password
-
-File Path: "src/components/inputBox/showInputBox.ts" => showInputBox()
-
-#### b) Show Input Box Method - With Password
-
-File Path: "src/components/inputBox/showInputBox.ts" => showInputBoxWithPassword()
-
-#### c) Create Input Box Method - Without Password
-
-File Path: "src/components/inputBox/createInputBox.ts" => createInputBox()
-
-#### d) Create Input Box Method - With Password
-
-File Path: "src/components/inputBox/createInputBox.ts" => createInputBoxWithPassword()
-
-### Tree View (current default is a Binary Search Tree):
-
-<b><u>Main Toolbar Icon Commands</u></b>: Insert (inserts a random integer value into the tree), Refresh, Clear
-<br />
-<b><u>Inline Toolbar Icons (Placeholders)</u></b>: Edit, Delete
-<br /> <br />
-File Path: "src/components/treeView/BinarySearchTreeProvider.ts"
-
-## Demo a Change to Existing Feature
-
-1. Clone the repository
-2. Install dependencies (npm install)
-3. Optional - Create a branch (`git checkout -b <testBranchName>`)
-4. Navigate to "src/components/". These are the list of the current VSCode UI features.
-5. Open the UI feature folder of choice, and find your creation method. Open the file, make changes to your feature, then save.
-6. Run the change with F5 in the Extension Host mode, following the instructions in the Getting Started section.
-
-<img src="https://github.com/MicroFish91/a11y-kit/blob/main/resources/changeFeature.gif?raw=true" alt="Changing an Existing Feature" />
-
-## Adding a New Feature
-
-Coming soon...
+When adding a new component, follow the design flow of the other components in this directory.  Once the component is built per the `IComponent` format, it can then be incorporated inside of `createAndRegisterMenu.ts`.
 
 ## Screen Readers for Testing
 
