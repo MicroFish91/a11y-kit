@@ -24,12 +24,12 @@
     "commands": [
       {
         "command": "a11y-kit.menu",
-        "title": "a11y-kit: Select UI feature from menu for accessibility",
+        "title": "a11y-kit: Select UI feature for accessibility testing",
         "shortTitle": "Menu"
       },
       {
         "command": "a11y-kit.sandbox",
-        "title": "a11y-kit: VS Code UI Component Sandbox",
+        "title": "a11y-kit: Demo a UI feature in the sandbox",
         "shortTitle": "Sandbox"
       },
       {
