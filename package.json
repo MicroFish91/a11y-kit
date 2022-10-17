@@ -16,93 +16,17 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:a11y-kit.menu",
-    "onCommand:a11y-kit.sandbox"
+    "onCommand:a11y-kit.inputBox"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "a11y-kit.menu",
-        "title": "a11y-kit: Select UI feature for accessibility testing",
+        "command": "a11y-kit.inputBox",
+        "title": "a11y-kit: Input Box for Quick Validation Testing",
         "shortTitle": "Menu"
-      },
-      {
-        "command": "a11y-kit.sandbox",
-        "title": "a11y-kit: Demo a UI feature in the sandbox",
-        "shortTitle": "Sandbox"
-      },
-      {
-        "command": "a11y-kit.treeViewInsert",
-        "title": "Insert",
-        "icon": "resources/edit.svg"
-      },
-      {
-        "command": "a11y-kit.treeViewRefresh",
-        "title": "Refresh",
-        "icon": "./resources/refresh.svg"
-      },
-      {
-        "command": "a11y-kit.treeViewClear",
-        "title": "Clear"
-      },
-      {
-        "command": "a11y-kit.treeViewEditEntry",
-        "title": "Edit",
-        "icon": "resources/edit.svg"
-      },
-      {
-        "command": "a11y-kit.treeViewDeleteEntry",
-        "title": "Delete"
       }
-    ],
-    "menus": {
-      "view/title": [
-        {
-          "command": "a11y-kit.treeViewInsert",
-          "when": "view == treeView",
-          "group": "navigation"
-        },
-        {
-          "command": "a11y-kit.treeViewRefresh",
-          "when": "view == treeView",
-          "group": "navigation"
-        },
-        {
-          "command": "a11y-kit.treeViewClear",
-          "when": "view == treeView"
-        }
-      ],
-      "view/item/context": [
-        {
-          "command": "a11y-kit.treeViewEditEntry",
-          "when": "view == treeView && viewItem == bstNode",
-          "group": "inline"
-        },
-        {
-          "command": "a11y-kit.treeViewDeleteEntry",
-          "when": "view == treeView && viewItem == bstNode"
-        }
-      ]
-    },
-    "views": {
-      "tree-view": [
-        {
-          "id": "treeView",
-          "name": "Tree View",
-          "contextualTitle": "Tree View"
-        }
-      ]
-    },
-    "viewsContainers": {
-      "activitybar": [
-        {
-          "id": "tree-view",
-          "title": "Tree View",
-          "icon": "resources/dep.svg"
-        }
-      ]
-    }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
