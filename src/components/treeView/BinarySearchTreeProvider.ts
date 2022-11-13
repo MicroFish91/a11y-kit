@@ -8,24 +8,20 @@ import {
   TreeItemCollapsibleState,
 } from "vscode";
 
-export class BinarySearchTreeProvider implements TreeDataProvider<bstNode> {
-  private root: bstNode | null;
+export class BinarySearchTreeProvider implements TreeDataProvider<BstNode> {
+  private _root: BstNode | null = null;
 
-  public constructor() {
-    this.root = null;
+  public clearTree(): void {
+    this._root = null;
   }
 
-  public clearTree() {
-    this.root = null;
-  }
-
-  public getTreeItem(element: bstNode): TreeItem {
+  public getTreeItem(element: BstNode): TreeItem {
     return element;
   }
 
-  public getChildren(element?: bstNode): ProviderResult<bstNode[]> {
-    if (!this.root) return Promise.resolve([]);
-    if (!element) return Promise.resolve([this.root]);
+  public getChildren(element?: BstNode): ProviderResult<BstNode[]> {
+    if (!this._root) return Promise.resolve([]);
+    if (!element) return Promise.resolve([this._root]);
 
     const children = [];
     if (element.left) children.push(element.left);
@@ -35,14 +31,14 @@ export class BinarySearchTreeProvider implements TreeDataProvider<bstNode> {
   }
 
   public insertTreeItem(val: number): void {
-    const newNode = new bstNode(val);
+    const newNode = new BstNode(val);
 
-    if (!this.root) {
-      this.root = newNode;
+    if (!this._root) {
+      this._root = newNode;
       return;
     }
 
-    let currentNode = this.root;
+    let currentNode = this._root;
 
     while (true) {
       if (val === currentNode.val) break;
@@ -69,18 +65,16 @@ export class BinarySearchTreeProvider implements TreeDataProvider<bstNode> {
     this._onDidChangeTreeData.fire();
   }
 
-  private _onDidChangeTreeData: EventEmitter<
-    bstNode | undefined | null | void
-  > = new EventEmitter<bstNode | undefined | null | void>();
-
-  readonly onDidChangeTreeData: Event<bstNode | undefined | null | void> =
-    this._onDidChangeTreeData.event;
+  private _onDidChangeTreeData: EventEmitter<BstNode | undefined | null | void> = new EventEmitter<BstNode | undefined | null | void>();
+  readonly onDidChangeTreeData: Event<BstNode | undefined | null | void> = this._onDidChangeTreeData.event;
 }
 
-export class bstNode extends TreeItem {
-  public left: bstNode | null;
-  public right: bstNode | null;
+export class BstNode extends TreeItem {
+  public left: BstNode | null;
+  public right: BstNode | null;
   public val: number;
+  public iconPath = new ThemeIcon("type-hierarchy");
+  public contextValue = "bstNode";
 
   public constructor(val: number) {
     super(`${val}`, TreeItemCollapsibleState.Expanded);
@@ -90,13 +84,4 @@ export class bstNode extends TreeItem {
     this.right = null;
     this.val = val;
   }
-
-  iconPath = new ThemeIcon("type-hierarchy");
-  contextValue = "bstNode";
-  // command: Command
-  // accessibilityInformation?: AccessibilityInformation | undefined = {
-  //   label: "Binary Tree Node Accessibility Label",
-  //   // https://w3c.github.io/aria/#widget_roles
-  //   role: "treeitem",
-  // };
 }

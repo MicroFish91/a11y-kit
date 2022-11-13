@@ -1,14 +1,14 @@
 import { commands, TreeView, TreeViewOptions, window } from "vscode";
-import { BinarySearchTreeProvider, bstNode } from "../components/treeView";
+import { BinarySearchTreeProvider, BstNode } from "../components/treeView";
 
 export function treeCommands() {
   const bstProvider = new BinarySearchTreeProvider();
-  const treeViewOptions: TreeViewOptions<bstNode> = {
+  const treeViewOptions: TreeViewOptions<BstNode> = {
     treeDataProvider: bstProvider,
     showCollapseAll: true,
     canSelectMany: true,
   };
-  const treeView: TreeView<bstNode> = window.createTreeView(
+  const treeView: TreeView<BstNode> = window.createTreeView(
     "treeView",
     treeViewOptions
   );
