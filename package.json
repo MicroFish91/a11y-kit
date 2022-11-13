@@ -19,6 +19,7 @@
     "onCommand:a11y-kit.menu",
     "onCommand:a11y-kit.sandbox"
   ],
+  "browser": "./dist/extension.js",
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
