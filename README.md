@@ -18,7 +18,7 @@ Choose `a11y-kit: Select UI feature for accessibility testing`. Finally, choose 
 
 ## UI Components
 
-UI components are listed in the `components` folder.  Any changes or enhancments to the components should be made here.
+UI components are listed in the `components/` folder.  Any changes or enhancements to the components should be made here.
 
 <img src="https://github.com/MicroFish91/a11y-kit/blob/main/resources/changeFeature.gif?raw=true" alt="a11y-kit Menu Display" />
 
