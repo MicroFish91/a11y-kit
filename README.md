@@ -10,19 +10,19 @@ UI configurations for screen reader compliance.
 
 <b><u>Option 2</u></b>: Clone the repo and run `npm install`
 
-Open the command pallette and type in `a11y`, `menu`, or `accessibility`. The menu command should pop up under `a11y-kit: ...`
+Open the command pallette and type in `a11y`. The menu command should pop up under `a11y-kit: ...`
 
 <img src="https://github.com/MicroFish91/a11y-kit/blob/main/resources/menu.gif?raw=true" alt="a11y-kit Menu Display" />
 
-Finally, choose a menu item to demo.
+Choose `a11y-kit: Select UI feature for accessibility testing`. Finally, choose then menu item you wish to demo.
 
 ## UI Components
 
-UI components are listed in the `components` folder.  Any changes to the test components should be made here.
+UI components are listed in the `components/` folder.  Any changes or enhancements to the components should be made here.
 
 <img src="https://github.com/MicroFish91/a11y-kit/blob/main/resources/changeFeature.gif?raw=true" alt="a11y-kit Menu Display" />
 
-When adding a new component, follow the design flow of the other components in this directory.  Once the component is built per the `IComponent` format, it can then be incorporated inside of `createAndRegisterMenu.ts`.
+When adding a new component, follow the design flow of the other components in this directory.  Once the component is built per the `IComponent` format, it can then be incorporated using `createAndRegisterMenu.ts`.
 
 ## Screen Readers for Testing
 
