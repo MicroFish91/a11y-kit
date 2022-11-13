@@ -1,6 +1,6 @@
 # Accessibility Testkit
 
-Accessibility Testkit (a11y-kit) is a menu-driven extension that allows users to quickly demo a small subset of VSCode's
+Accessibility Testkit (a11y-kit) is a menu-driven extension that allows users to quickly demo a small subset of VS Code's
 common UI features with different base configuration sets. a11y-kit's fast feature demo'ing enables the user to quickly check
 UI configurations for screen reader compliance.
 
