@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.1.0] - \*11/13/2022
+
+New: <br />
+
+- Converted to web-extension
+- Added a separate playground menu for less tested features to be previewed
+- Added quick pick separators to menus
+
 ## [1.0.0] - \*5/15/2022
 
 Official Release
@@ -8,10 +16,8 @@ Official Release
 
 Changes: <br />
 
-1. Simplify starting menu UI
-2. Shorten component text fields
-3. Added additional text fields to tree view
-4. Create change log
+- Simplify starting menu UI
+- Improve tree-view UI
 
 ## [0.0.1] - \*5/10/2022
 
