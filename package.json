@@ -10,7 +10,7 @@
     "url": "https://github.com/MicroFish91/a11y-kit.git"
   },
   "engines": {
-    "vscode": "^1.66.0"
+    "vscode": "^1.73.0"
   },
   "categories": [
     "Other"
