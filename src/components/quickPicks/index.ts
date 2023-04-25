@@ -1,4 +1,4 @@
-import { Component, ComponentOption } from "../../menu/IComponent";
+import { Component, ComponentOption } from "../IComponent";
 import {
   createQuickPicksMany,
   createQuickPicksSingle,

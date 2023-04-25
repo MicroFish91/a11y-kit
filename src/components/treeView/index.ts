@@ -1,5 +1,5 @@
 import { commands } from "vscode";
-import { Component, ComponentOption } from "../../menu/IComponent";
+import { Component, ComponentOption } from "../IComponent";
 export * from "./BinarySearchTreeProvider";
 
 const TV_OPTIONS: ComponentOption[] = [

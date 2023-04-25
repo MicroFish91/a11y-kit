@@ -1,4 +1,4 @@
-import { Component, ComponentOption } from "../../menu/IComponent";
+import { Component, ComponentOption } from "../IComponent";
 import { showInformationMessage } from "./showMessage";
 import { showWarningMessage } from "./showMessage";
 import { showErrorMessage } from "./showMessage";
