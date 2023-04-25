@@ -1,5 +1,5 @@
 import { ProgressLocation } from "vscode";
-import { Component, ComponentOption } from "../../menu/IComponent";
+import { Component, ComponentOption } from "../IComponent";
 import { withProgress } from "./withProgress";
 
 const WP_OPTIONS: ComponentOption[] = [

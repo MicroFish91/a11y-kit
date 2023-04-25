@@ -1,6 +1,6 @@
 import { ExtensionContext, QuickPickItemKind, window } from "vscode";
 import { CustomQuickPickItem } from "../components/quickPicks/CustomQuickPickItem";
-import { Component, ComponentOption } from "./IComponent";
+import { Component, ComponentOption } from "../components/IComponent";
 
 export class Menu {
     private menuItems: Omit<ComponentOption, 'cb'>[] = [];
