@@ -1,11 +1,11 @@
 import { ExtensionContext } from "vscode";
 
-export interface IComponent {
+export interface Component {
     label: string;
-    optionsList: IComponentOption[];
+    optionsList: ComponentOption[];
 }
 
-export interface IComponentOption {
+export interface ComponentOption {
     label: string;
     description: string;
     cb: (context: ExtensionContext) => any;

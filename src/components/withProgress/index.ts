@@ -1,8 +1,8 @@
 import { ProgressLocation } from "vscode";
-import { IComponent, IComponentOption } from "../../menu/IComponent";
+import { Component, ComponentOption } from "../../menu/IComponent";
 import { withProgress } from "./withProgress";
 
-const WP_OPTIONS: IComponentOption[] = [
+const WP_OPTIONS: ComponentOption[] = [
   {
     label: "With Progress - Notification",
     description: "withProgressNotification",
@@ -17,7 +17,7 @@ const WP_OPTIONS: IComponentOption[] = [
 
 const label: string = "Progress";
 
-export const wpComponent: IComponent = {
+export const wpComponent: Component = {
   label,
   optionsList: WP_OPTIONS
 };
