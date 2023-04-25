@@ -10,14 +10,10 @@
     "url": "https://github.com/MicroFish91/a11y-kit.git"
   },
   "engines": {
-    "vscode": "^1.73.0"
+    "vscode": "^1.77.0"
   },
   "categories": [
     "Other"
-  ],
-  "activationEvents": [
-    "onCommand:a11y-kit.menu",
-    "onCommand:a11y-kit.sandbox"
   ],
   "browser": "./dist/extension.js",
   "main": "./dist/extension.js",
@@ -106,21 +102,17 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "npm run package",
     "compile": "webpack",
-    "watch": "webpack --watch",
-    "package": "webpack --mode production --devtool hidden-source-map",
-    "compile-tests": "tsc -p . --outDir out",
-    "watch-tests": "tsc -p . -w --outDir out",
-    "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "package": "vsce package",
+    "prepublish": "webpack --mode production --devtool hidden-source-map",
+    "watch": "webpack --watch"
   },
   "devDependencies": {
     "@types/glob": "^7.2.0",
     "@types/mocha": "^9.1.0",
     "@types/node": "14.x",
-    "@types/vscode": "^1.73.0",
+    "@types/vscode": "^1.77.0",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
     "@vscode/test-electron": "^2.1.3",
