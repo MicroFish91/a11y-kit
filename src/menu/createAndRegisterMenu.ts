@@ -1,8 +1,8 @@
-import { ibComponent } from "../components/inputBox";
-import { qpComponent } from "../components/quickPicks";
-import { smComponent } from "../components/showMessage";
-import { tvComponent } from "../components/treeView";
-import { wpComponent } from "../components/withProgress";
+import { ibComponent } from "../components/inputBox/inputBoxComponent";
+import { qpComponent } from "../components/quickPicks/quickPicksComponent";
+import { smComponent } from "../components/showMessage/showMessageComponent";
+import { tvComponent } from "../components/treeView/treeViewComponent";
+import { wpComponent } from "../components/withProgress/withProgressComponent";
 import { Menu } from "./Menu";
 
 export function createAndRegisterA11yMenu(): Menu {

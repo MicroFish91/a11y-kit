@@ -1,5 +1,5 @@
 import { commands, TreeView, TreeViewOptions, window } from "vscode";
-import { BinarySearchTreeProvider, BstNode } from "../components/treeView";
+import { BinarySearchTreeProvider, BstNode } from "../components/treeView/treeViewComponent";
 
 export function treeCommands() {
   const bstProvider = new BinarySearchTreeProvider();
