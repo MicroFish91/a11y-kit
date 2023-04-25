@@ -1,11 +1,11 @@
-import { IComponent, IComponentOption } from "../../menu/IComponent";
+import { Component, ComponentOption } from "../../menu/IComponent";
 import {
   createQuickPicksMany,
   createQuickPicksSingle,
 } from "./createQuickPicks";
 import { showQuickPicksMany, showQuickPicksSingle } from "./showQuickPicks";
 
-const QP_OPTIONS: IComponentOption[] = [
+const QP_OPTIONS: ComponentOption[] = [
   {
     label: "Show Quick Picks - Single",
     description: "showQuickPicksSingle",
@@ -30,7 +30,7 @@ const QP_OPTIONS: IComponentOption[] = [
 
 const label: string = "Quick Picks";
 
-export const qpComponent: IComponent = {
+export const qpComponent: Component = {
   label,
   optionsList: QP_OPTIONS
 };

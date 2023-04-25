@@ -1,9 +1,9 @@
-import { IComponent, IComponentOption } from "../../menu/IComponent";
+import { Component, ComponentOption } from "../../menu/IComponent";
 import { showInformationMessage } from "./showMessage";
 import { showWarningMessage } from "./showMessage";
 import { showErrorMessage } from "./showMessage";
 
-const SM_OPTIONS: IComponentOption[] = [
+const SM_OPTIONS: ComponentOption[] = [
   {
     label: "Show Information Message",
     description: "showInformationMessage",
@@ -23,7 +23,7 @@ const SM_OPTIONS: IComponentOption[] = [
 
 const label: string = "Show Message";
 
-export const smComponent: IComponent = {
+export const smComponent: Component = {
   label,
   optionsList: SM_OPTIONS
 };

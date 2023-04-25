@@ -9,10 +9,10 @@ import {
 } from "vscode";
 
 export class BinarySearchTreeProvider implements TreeDataProvider<BstNode> {
-  private _root: BstNode | null = null;
+  private root: BstNode | null = null;
 
   public clearTree(): void {
-    this._root = null;
+    this.root = null;
   }
 
   public getTreeItem(element: BstNode): TreeItem {
@@ -20,8 +20,8 @@ export class BinarySearchTreeProvider implements TreeDataProvider<BstNode> {
   }
 
   public getChildren(element?: BstNode): ProviderResult<BstNode[]> {
-    if (!this._root) return Promise.resolve([]);
-    if (!element) return Promise.resolve([this._root]);
+    if (!this.root) return Promise.resolve([]);
+    if (!element) return Promise.resolve([this.root]);
 
     const children = [];
     if (element.left) children.push(element.left);
@@ -33,12 +33,12 @@ export class BinarySearchTreeProvider implements TreeDataProvider<BstNode> {
   public insertTreeItem(val: number): void {
     const newNode = new BstNode(val);
 
-    if (!this._root) {
-      this._root = newNode;
+    if (!this.root) {
+      this.root = newNode;
       return;
     }
 
-    let currentNode = this._root;
+    let currentNode = this.root;
 
     while (true) {
       if (val === currentNode.val) break;
