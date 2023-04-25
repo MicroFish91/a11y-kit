@@ -3,7 +3,6 @@ import { showInformationMessage } from "./showMessage";
 import { showWarningMessage } from "./showMessage";
 import { showErrorMessage } from "./showMessage";
 
-
 const SM_OPTIONS: IComponentOption[] = [
   {
     label: "Show Information Message",
