@@ -12,7 +12,7 @@ UI configurations for screen reader compliance.
 
 Open the command pallette and type in `a11y`. The menu command should pop up under `a11y-kit: ...`
 
-![Use the a11y-kit menu](resources/menu.gif)
+![Use the a11y-kit menu](resources/updated_menu.gif)
 
 Choose `a11y-kit: Select UI feature for accessibility testing`.  Finally, choose the menu item you wish to demo.
 
