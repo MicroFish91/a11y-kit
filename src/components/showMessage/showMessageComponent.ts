@@ -3,23 +3,23 @@ import { showErrorMessageWithButtons, showInformationMessage, showInformationMes
 
 const SM_OPTIONS: ComponentOption[] = [
   {
+    id: "showInformationMessage",
     label: "Show Information Message",
-    description: "showInformationMessage",
     cb: showInformationMessage,
   },
   {
+    id: "showInformationMessageWithButtons",
     label: "Show Information Message With Buttons",
-    description: "showInformationMessageWithButtons",
     cb: showInformationMessageWithButtons,
   },
   {
+    id: "showWarningMessageWithButtons",
     label: "Show Warning Message With Buttons",
-    description: "showWarningMessageWithButtons",
     cb: showWarningMessageWithButtons,
   },
   {
+    id: "showErrorMessageWithButtons",
     label: "Show Error Message With Buttons",
-    description: "showErrorMessageWithButtons",
     cb: showErrorMessageWithButtons,
   },
 ];

@@ -4,8 +4,8 @@ export * from "./BinarySearchTreeProvider";
 
 const TV_OPTIONS: ComponentOption[] = [
   {
+    id: "displayTreeView",
     label: "Display Tree View",
-    description: "displayTreeView",
     cb: displayTreeView,
   }
 ];
