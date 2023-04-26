@@ -1,4 +1,4 @@
-import { ExtensionContext } from "vscode";
+import { ExtensionContext, QuickPickItem } from "vscode";
 
 export interface Component {
     label: string;
@@ -6,7 +6,7 @@ export interface Component {
 }
 
 export interface ComponentOption {
+    id: string;
     label: string;
-    description: string;
     cb: (context: ExtensionContext) => any;
 }

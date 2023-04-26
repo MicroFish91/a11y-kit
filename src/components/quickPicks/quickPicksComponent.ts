@@ -7,23 +7,23 @@ import { showQuickPicksMany, showQuickPicksSingle } from "./showQuickPicks";
 
 const QP_OPTIONS: ComponentOption[] = [
   {
+    id: "showQuickPicksSingle",
     label: "Show Quick Picks - Single",
-    description: "showQuickPicksSingle",
     cb: showQuickPicksSingle,
   },
   {
+    id: "showQuickPicksMany",
     label: "Show Quick Picks - Many",
-    description: "showQuickPicksMany",
     cb: showQuickPicksMany,
   },
   {
+    id: "createQuickPicksSingle",
     label: "Create Quick Picks - Single",
-    description: "createQuickPicksSingle",
     cb: createQuickPicksSingle,
   },
   {
+    id: "createQuickPicksMany",
     label: "Create Quick Picks - Many",
-    description: "createQuickPicksMany",
     cb: createQuickPicksMany,
   },
 ];

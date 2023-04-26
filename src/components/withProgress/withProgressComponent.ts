@@ -4,13 +4,13 @@ import { withProgress } from "./withProgress";
 
 const WP_OPTIONS: ComponentOption[] = [
   {
+    id: "withProgressNotification",
     label: "With Progress - Notification",
-    description: "withProgressNotification",
     cb: () => withProgress(ProgressLocation.Notification),
   },
   {
+    id: "withProgressWindow",
     label: "With Progress - Window",
-    description: "withProgressWindow",
     cb: () => withProgress(ProgressLocation.Window),
   }
 ];

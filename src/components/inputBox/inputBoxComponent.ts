@@ -4,23 +4,23 @@ import { showInputBox, showInputBoxWithPassword } from "./showInputBox";
 
 const IB_OPTIONS: ComponentOption[] = [
   {
+    id: "showInputBox",
     label: "Show Input Box without Password",
-    description: "showInputBox",
     cb: showInputBox,
   },
   {
+    id: "showInputBoxWithPassword",
     label: "Show Input Box with Password",
-    description: "showInputBoxWithPassword",
     cb: showInputBoxWithPassword,
   },
   {
+    id: "createInputBox",
     label: "Create Input Box without Password",
-    description: "createInputBox",
     cb: createInputBox,
   },
   {
+    id: "createInputBoxWithPassword",
     label: "Create Input Box with Password",
-    description: "createInputBoxWithPassword",
     cb: createInputBoxWithPassword,
   },
 ];
