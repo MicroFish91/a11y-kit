@@ -19,7 +19,7 @@ const SM_OPTIONS: ComponentOption[] = [
   },
   {
     label: "Show Error Message With Buttons",
-    description: "showErrorMessage",
+    description: "showErrorMessageWithButtons",
     cb: showErrorMessageWithButtons,
   },
 ];
