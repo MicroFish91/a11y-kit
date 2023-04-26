@@ -3,7 +3,7 @@
   "displayName": "a11y-kit",
   "description": "a11y-kit enables the user to quickly check VS Code UI configurations for screen reader compliance",
   "icon": "resources/laptop.png",
-  "version": "1.1.2-alpha.0",
+  "version": "1.1.2",
   "publisher": "MicroFish",
   "repository": {
     "type": "git",
