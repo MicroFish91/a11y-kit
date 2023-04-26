@@ -1,7 +1,5 @@
 import { Component, ComponentOption } from "../IComponent";
-import { showInformationMessage } from "./showMessage";
-import { showWarningMessage } from "./showMessage";
-import { showErrorMessage } from "./showMessage";
+import { showErrorMessageWithButtons, showInformationMessage, showInformationMessageWithButtons, showWarningMessageWithButtons } from "./showMessage";
 
 const SM_OPTIONS: ComponentOption[] = [
   {
@@ -10,14 +8,19 @@ const SM_OPTIONS: ComponentOption[] = [
     cb: showInformationMessage,
   },
   {
-    label: "Show Warning Message",
-    description: "showWarningMessage",
-    cb: showWarningMessage,
+    label: "Show Information Message With Buttons",
+    description: "showInformationMessageWithButtons",
+    cb: showInformationMessageWithButtons,
   },
   {
-    label: "Show Error Message",
+    label: "Show Warning Message With Buttons",
+    description: "showWarningMessageWithButtons",
+    cb: showWarningMessageWithButtons,
+  },
+  {
+    label: "Show Error Message With Buttons",
     description: "showErrorMessage",
-    cb: showErrorMessage,
+    cb: showErrorMessageWithButtons,
   },
 ];
 
@@ -27,3 +30,4 @@ export const smComponent: Component = {
   label,
   optionsList: SM_OPTIONS
 };
+
