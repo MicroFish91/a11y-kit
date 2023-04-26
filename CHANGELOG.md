@@ -1,5 +1,16 @@
 # Change Log
 
+## 1.1.2 - 4/26/2023
+
+### Added
+
+- Added a show message component option with no buttons
+
+### Changed
+
+- Differentiate show message components by button inclusion
+- Changed menu items to no longer show ID's in the description
+
 ## 1.1.1 - 4/25/2023
 
 ### Added
